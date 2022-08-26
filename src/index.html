@@ -4,18 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Dark mode</title>
   </head>
-  <body class="grid place-items-center bg-slate-100 p-8 lg:p-20">
+  <body
+    class="grid place-items-center bg-slate-100 p-8 dark:bg-slate-700 lg:p-20"
+  >
+    <header>
+      <button
+        id="darkMode"
+        class="rounded-md bg-indigo-600 py-3 px-6 text-white drop-shadow-md hover:bg-indigo-500 focus:border-4 focus:border-solid focus:border-fuchsia-600 lg:py-5 lg:px-10"
+      >
+        Dark mode
+      </button>
+      <button
+        id="lightMode"
+        class="rounded-md bg-indigo-500 py-3 px-6 text-white drop-shadow-md hover:bg-indigo-600 focus:border-4 focus:border-solid focus:border-fuchsia-600 lg:py-5 lg:px-10"
+      >
+        Light mode
+      </button>
+    </header>
+
     <article
-      class="lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:place-items-center lg:gap-10"
+      class="mt-8 lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:place-items-center lg:gap-10"
     >
       <section>
-        <h1 class="mb-2 text-sm uppercase text-indigo-600">
+        <h1 class="mb-2 text-sm uppercase text-indigo-600 dark:text-indigo-300">
           Our customers love our products
         </h1>
-        <h2 class="mb-4 text-3xl md:text-5xl">Testimonials</h2>
-        <p class="mb-8 text-slate-600">
+        <h2 class="mb-4 text-3xl dark:text-slate-400 md:text-5xl">
+          Testimonials
+        </h2>
+        <p class="mb-8 text-slate-600 dark:text-slate-300">
           Don't just take our word for it, read from our extensive list of case
           studies and customer testimonials
         </p>
